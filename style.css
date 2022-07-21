@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.page-inner {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #232323;
+    height: 100vh;
+    padding: 10px 0;
+    /* border: 3px solid red; */
+}
+.player-cont{
+    display: flex;
+    justify-content: space-between;
+    /* position: fixed; */
+}
+.player1{
+    width: fit-content;
+    
+    height: auto;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 0 3px;
+}
+.player1 h2{
+    border-bottom: 3px solid black;
+    margin-bottom: 5px;
+}
+
+.dice-container {
+    width: 40%;
+    color: antiquewhite;
+    border: 5px double goldenrod;
+    height: 75vh;
+    border-radius: 5px;
+}
+@media screen and (max-width: 500px) {
+    .dice-container {
+        width: 90%;
+        color: antiquewhite;
+        border: 5px double goldenrod;
+        height: 55vh;
+        border-radius: 5px;
+    }
+}
+.roll-container{
+    display: none;
+}
+
+.heading {
+    /* margin: 30px 0; */
+    color: ghostwhite;
+}
+.congrat-img{
+    /* width: 100px; */
+    /* display: none; */
+    justify-content: center;
+    display: flex;
+}
+.congrat-img img{
+    width: 150px;
+    display: none;
+}
+
+.fas {
+    font-size: 4em;
+    color: red;
+    animation: roll 1s ease;
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0);
+    }
+
+    70% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.img {
+    /* display: none; */
+    width: 200px;
+    height: 100px;
+}
+
+.congratulation {
+    display: none;
+}
+
+.btn {
+    width: 100px;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 8px 0;
+    margin-top: 20px;
+    cursor: pointer;
+    border: unset;
+    box-shadow: 6px 2px 8px 3px black;
+}
+
+.btn:hover {
+    background: greenyellow;
+    transition: 2s;
+    color: grey;
+}
+
+.message {
+    animation: msg 2s infinite;
+    transition: 2s;
+}
+
+@keyframes msg {
+    0% {
+        color: yellow;
+    }
+
+    20% {
+        color: green;
+    }
+
+    40% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        color: rgb(128, 0, 128);
+    }
+
+    100% {
+        color: tomato;
+    }
+}
+.total1, .total2{
+    color: red;
+   border-top: 3px solid #232323;
+    font-size: 20px;
+}
+.roll-container1{
+    display: none;
+}
+.Roll-btn1{
+    cursor: pointer;
+    padding: 10px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: goldenrod;
+    color: black;
+    font-weight: 800;
+    border: unset;
+}
+.Roll-btn, .start-Btn, #selections{
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: goldenrod;
+    color: black;
+    font-weight: 800;
+    border: unset;
+}
+.player1 img{
+    width: 50px;
+    height: 50px;
+}
